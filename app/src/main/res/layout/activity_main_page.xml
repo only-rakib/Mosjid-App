@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".main_page">
+
+    <ImageButton
+        android:id="@+id/imageButtonAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="imageButtonAllClick"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonDue"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonPaid"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/listall_128" />
+
+    <ImageButton
+        android:id="@+id/imageButtonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonAbout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonDue"
+        android:onClick="imageButtonAddClick"
+        app:srcCompat="@drawable/add_person" />
+
+    <ImageButton
+        android:id="@+id/imageButtonDue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="imageButtonDueClick"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonAdd"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonBalance"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonAll"
+        app:srcCompat="@drawable/listcross_128" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="imageButtonBalanceClick"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonAbout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonDue"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonPaid"
+        app:srcCompat="@drawable/money_128" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="imageButtonPaidClick"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonBalance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonAll"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/list_ok_128" />
+
+    <ImageButton
+        android:id="@+id/imageButtonExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="imageButtonExitClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonSwitch"
+        app:srcCompat="@drawable/exit_64" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="imageButtonSwitchClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonExit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/switch_64" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.772" />
+
+    <ImageButton
+        android:id="@+id/imageButtonAbout"
+        android:layout_width="150dp"
+        android:layout_height="144dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonAdd"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonBalance"
+        app:srcCompat="@drawable/do_not_touch_128"
+        android:onClick="imageButtonAboutClick"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Mosjid</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="personName">Name</string>
+    <string name="personFatherName">Father\'s Name</string>
+    <string name="phone">Phone</string>
+    <string name="add">Add</string>
+    <string name="search">Search</string>
+    <string name="buttonView">View</string>
+    <string name="buttonEdit">Edit</string>
+    <string name="buttonDelete">Delete</string>
+    <string name="myname">Rakibul Hasan Rakib</string>
+    <string name="dept_id">CE-16037</string>
+    <string name="dept">Department of Computer Science and Engineering</string>
+    <string name="varsity">Mawlana Bhashani Science and Technology University</string>
+    <string name="mob">01521490083/01776820255</string>
+    <string name="version">Application\'s Version 20.04</string>
+
+
+</resources>
